@@ -1,0 +1,10 @@
+# Bundle patch for dsh-model-select-test.
+#
+# The shipped model menu row is disabled and this package's derivative takes
+# over: uninstalling this bundle restores the shipped menu automatically.
+- id: ui-model-selection
+  disabled: true
+
+- insert:
+    - id: ui-model-selection-test
+      name: "dsh-model-select-test"
